@@ -3,8 +3,8 @@
 This directory contains minimal public references for CVE coordination involving Netcore router findings.
 The files intentionally omit proof-of-concept material, exploit steps, and detailed remediation notes.
 Public reference date: 2026-09-04
-Contributors: Zhou Ao, Yin Luxing, Jiang Yuxuan, Liu Xin, @Nebusec
-Status: 22 findings have provisional CVE IDs; 3 additional references are pending confirmation.
+Contributors: Zhou Ao, Yin Luxing, Jiang Yuxuan, Lu Fangzhou, Liu Xin, @Nebusec
+Status: 22 findings have provisional CVE IDs; 3 additional references are pending confirmation. 7 additional NR256CN references published on 2026-10-16; CVE submission pending.
 
 ## Advisories
 - [Unterminated Buffer Over-read in filter_arp_put_file.cgi via String API Misuse](2026.08.19-netcore-nr255v-arp-import-overread.md)
@@ -32,3 +32,10 @@ Status: 22 findings have provisional CVE IDs; 3 additional references are pendin
 - [Stack-based Buffer Overflow in wake_up_set.cgi via Unbounded MAC and ID Tokenization](2026.08.19-netcore-nr255v-wake-up-set-overflow.md)
 - [Forgeable Firmware Authenticity Check in mtd_write](2026.08.19-netcore-nr268-firmware-forgery.md)
 - [Parameter Restore Archive Bypass via Prefix Check in parame_put_file.cgi](2026.08.19-netcore-nr268-restore-bypass.md)
+- [Pre-authentication Stack Buffer Overflow via a Long Basic-Auth Username in user_ok](2026.10.15-netcore-nr256cn-basic-auth-stack-overflow.md)
+- [NULL Pointer Dereference in Basic-Auth Parsing Before Authentication Failure Handling](2026.10.15-netcore-nr256cn-basic-auth-null-deref.md)
+- [Authentication Bypass on Protected Management CGI Handlers via Public-Route URI Prefixes](2026.10.15-netcore-nr256cn-cgi-auth-bypass-alternate-path.md)
+- [Out-of-Bounds Write in Scheduler fd_set Handling under Concurrent POST Uploads](2026.10.15-netcore-nr256cn-fdset-oob-write-post-spray.md)
+- [Out-of-Bounds Read in Multipart Upload Parsing via Unterminated Body Search](2026.10.15-netcore-nr256cn-multipart-body-overread.md)
+- [Invalid Boundary Pointer Dereference during CGI Handoff on Multipart Uploads](2026.10.15-netcore-nr256cn-multipart-boundary-pointer-deref.md)
+- [Unauthenticated Writes to Predictable Fixed Temporary Files via Arbitrary CGI Pathnames](2026.10.15-netcore-nr256cn-fixed-tmp-sink-write.md)
